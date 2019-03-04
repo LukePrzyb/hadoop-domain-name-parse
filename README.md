@@ -2,7 +2,7 @@
 A simple domain name parsing program that uses distributed file systems to digest large files of domain names
 
 Takes advantage of Apache Hadoop to parse out all domain names from a file such as a ZONE File that can be acquired
-from a DNS server (although 99% impossible due to security issues)
+from a DNS server (although 99% impossible to acquire due to security concerns)
 
 Inspired by some work i've done in big data analysis.
 
