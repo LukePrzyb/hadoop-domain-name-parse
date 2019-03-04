@@ -110,8 +110,6 @@ public class DomainParse {
       // Regex demands at least ONE period to be a valid domain name
       String[] domain = keyString.split("\\.");
 
-      // System.out.println(domain.toString() + ", " + domain.length);
-
       String sld = domain[domain.length - 2];
 
       int sldLength = sld.length();
