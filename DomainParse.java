@@ -284,6 +284,7 @@ public class DomainParse {
       return;
     }
 
+    // Override to string to print out our custom format for reduce.
     @Override
     public String toString() {
       return sld.toString() + "|" + sldParsed.toString() + "|" + occurences.toString();
@@ -325,7 +326,7 @@ public class DomainParse {
     primaryJob.setMapOutputKeyClass(Text.class);
     primaryJob.setMapOutputValueClass(IntWritable.class);
 
-    // For simplicity's sake: Reduce task is set to 1.
+    // For simplicity's sake: Set Reduce task to 1 process
     primaryJob.setNumReduceTasks(1);
 
     primaryJob.setOutputKeyClass(Text.class);
